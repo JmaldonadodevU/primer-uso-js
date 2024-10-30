@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área</title>
+</head>
+<body>
+    <h1 class="titulo" id="titulo">Calcula el área de un rectángulo</h1>
+    <label class="" for="largo">Largo:</label>
+    <input type="number" id="largo">
+    <br>
+    <label for="ancho">Ancho:</label>
+    <input type="number" id="ancho">
+    <br>
+    <button onclick="calcularArea()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularArea() {
+            // Obtener los valores del largo y ancho ingresados por el usuario
+            const largo = document.getElementById('largo').value;
+            const ancho = document.getElementById('ancho').value;
+
+            // Calcular el área
+            const area = largo * ancho;
+
+            // Mostrar el resultado en la página
+            document.getElementById('resultado').textContent = `El área del rectángulo es: ${area}`;
+        }
+    </script>
+</body>
+</html>

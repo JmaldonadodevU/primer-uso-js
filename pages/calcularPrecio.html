@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Precio con Descuento</title>
+    <script>
+        function calcularPrecioFinal() {
+            const precioOriginal = parseFloat(document.getElementById('precioOriginal').value);
+            const porcentajeDescuento = parseFloat(document.getElementById('porcentajeDescuento').value);
+            const descuento = (precioOriginal * porcentajeDescuento) / 100;
+            const precioFinal = precioOriginal - descuento;
+            document.getElementById('resultado').innerText = `El precio final es: $${precioFinal.toFixed(2)}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Precio con Descuento</h1>
+    <label for="precioOriginal">Precio Original:</label>
+    <input type="number" id="precioOriginal" step="0.01"><br><br>
+    <label for="porcentajeDescuento">Porcentaje de Descuento:</label>
+    <input type="number" id="porcentajeDescuento" step="0.01"><br><br>
+    <button onclick="calcularPrecioFinal()">Calcular Precio Final</button>
+    <p id="resultado"></p>
+</body>
+</html>

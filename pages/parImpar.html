@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par o Impar?</title>
+    <script src="/scripts/funcionPar.js"></script>
+    <link rel="stylesheet" href="/css/parImpar.css">
+</head>
+<body>
+    <div class="parImpar" id="parImpar">
+        <h1 class="titulo" id="titulo">Par o Impar?</h1>
+        <label class="textoFormulario" for="numero">Ingresa un número:</label>
+        <div class="rellenar"><input class="insertarDatos" type="number" id="numero"></div>
+        <button onclick="determinarParImparAlert()" class="boton">Determinar en alert</button>
+        <button onclick="determinarParImpar()" class="enBody">Determinar en Body</button>
+        <p class="resultado" id="resultado"></p>
+    </div>
+</body>
+</html>
