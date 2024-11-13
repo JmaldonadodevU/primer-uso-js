@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Empleados</title>
+    <script src="/scripts/objetosJavascript.js" defer></script>
+</head>
+<body>
+    <h1>Gestión de Empleados</h1>
+    <div class="Informacion" id="Informacion">
+        <button onclick="gestionEmpleados.calcularSalarioTotal()">Consultar</button>
+    </div>
+    <pre id="result"></pre>
+</body>
+</html>
+<!--
+List of all JavaScript events:
+
+1. Mouse Events:
+    - click: Fired when a pointing device button (usually a mouse) is pressed and released on a single element.
+    - dblclick: Fired when a pointing device button is clicked twice on a single element.
+    - mousedown: Fired when a pointing device button is pressed on an element.
+    - mouseup: Fired when a pointing device button is released over an element.
+    - mousemove: Fired when a pointing device is moved over an element.
+    - mouseover: Fired when a pointing device is moved onto an element.
+    - mouseout: Fired when a pointing device is moved off an element.
+    - mouseenter: Fired when a pointing device is moved onto an element (does not bubble).
+    - mouseleave: Fired when a pointing device is moved off an element (does not bubble).
+
+2. Keyboard Events:
+    - keydown: Fired when a key is pressed down.
+    - keyup: Fired when a key is released.
+    - keypress: Fired when a key is pressed down and released (deprecated).
+
+3. Form Events:
+    - submit: Fired when a form is submitted.
+    - change: Fired when the value of an element has been changed.
+    - input: Fired when the value of an <input>, <textarea>, or <select> element has been changed.
+    - focus: Fired when an element has received focus (does not bubble).
+    - blur: Fired when an element has lost focus (does not bubble).
+    - reset: Fired when a form is reset.
+
+4. Window Events:
+    - load: Fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
+    - unload: Fired when the document or a child resource is being unloaded.
+    - resize: Fired when the document view (window) has been resized.
+    - scroll: Fired when the document view or an element has been scrolled.
+
+5. Clipboard Events:
+    - copy: Fired when the user initiates a copy action.
+    - cut: Fired when the user initiates a cut action.
+    - paste: Fired when the user initiates a paste action.
+
+6. Drag and Drop Events:
+    - drag: Fired when an element is being dragged.
+    - dragstart: Fired when the user starts dragging an element.
+    - dragend: Fired when the user has finished dragging an element.
+    - dragenter: Fired when a dragged element enters a valid drop target.
+    - dragleave: Fired when a dragged element leaves a valid drop target.
+    - dragover: Fired when a dragged element is being dragged over a valid drop target.
+    - drop: Fired when an element is dropped on a valid drop target.
+
+7. Touch Events:
+    - touchstart: Fired when a touch point is placed on the touch surface.
+    - touchmove: Fired when a touch point is moved along the touch surface.
+    - touchend: Fired when a touch point is removed from the touch surface.
+    - touchcancel: Fired when a touch point has been disrupted in an implementation-specific manner.
+
+8. Focus Events:
+    - focusin: Fired when an element is about to receive focus (bubbles).
+    - focusout: Fired when an element is about to lose focus (bubbles).
+
+9. Media Events:
+    - play: Fired when the media has started playing.
+    - pause: Fired when the media has been paused.
+    - ended: Fired when the media has reached the end.
+    - volumechange: Fired when the volume has changed.
+
+10. Miscellaneous Events:
+    - contextmenu: Fired when the right button of the mouse is clicked (before the context menu is displayed).
+    - wheel: Fired when a wheel button of a pointing device is rotated.
+    - error: Fired when an error occurs.
+    - abort: Fired when the loading of a resource has been aborted.
+-->
